@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="FRNmWFAwwAMuzJxxR3hJ5SQkltJcdeCt59_Z1swUuDU" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>David Charles Rossetter</title>
+    <meta name="description"
+        content="Alpha is a unique portfolio template built with bootstrap. It is perfect for CV/Resume, creative agency, personal portfolio and can easily be converted to suit your needs." />
+    <meta name="author" content="LionCoders" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link rel="stylesheet" href="css/plugins.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="anim pulse"><i class="ion-ios-bolt-outline"></i></div>
+    </div>
+    <div class="preloader-left"></div>
+    <div class="inline-menu-container showx">
+        <ul class="inline-menu">
+            <li class="menu-item">
+                <a href="index.html"></a>Main Site</li>
+        </ul>
+    </div>
+    <section class="home img-bg" style="background: url(images/home/background-main.jpg) 0 0; background-size: cover;">
+        <div class="overlay opacity5"></div>
+        <div class="container">
+            <div class="name-block">
+                <div class="name-block-container">
+                    <h1><span>Hi, I'm</span>David Rossetter.</h1>
+                    <h2 id="element"></h2>
+                    <div class="under-hero-title"></div>
+                </div>
+            </div>
+
+            <div class="content-blocks blog showx">
+                <section class="content">
+                    <div class="block-content blog not-signed-in">
+                        <h3 class="block-title">Dave, we just have to make sure it's you first.</h3>
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <div id="auth-container">
+                                    <span>Dave's Email</span>
+                                    <input class="auth-input" type="text" id="emailLogin" />
+                                    <span>Dave's Password</span>
+                                    <input class="auth-input" type="password" id="passwordLogin" />
+                                    <a target="_blank" class="btn" onclick="signMeIn()">Yeah, it's me.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="block-content blog signed-in">
+                        <h3 class="block-title">Hi Dave! How may I be of assistance?</h3>
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <div id="auth-container">
+                                    <a target="_blank" class="btn" onclick="signOut()">Sign me out, low tier IT
+                                        guy.</a>
+                                    <a target="_blank" class="btn" onclick="addNewBlogPost()">I want to add a blog
+                                        post.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row blog add-post">
+                            <div class="col-md-10 mx-auto">
+                                <div id="blog-post-container">
+                                    <div class="blog-form-container">
+                                        <div class="post-name-container">
+                                            <span>Dope, what is this post going to be called?</span>
+                                            <input tpye="text" id="post-name">
+                                            <a target="_blank" class="btn" onclick="submitPostName()">This.</a>
+                                            <div class="accent-bar"></div>
+                                        </div>
+                                        <div class="post-topic-container">
+                                            <span>Great, now give it a short topic.</span>
+                                            <input tpye="text" id="post-topic">
+                                            <a target="_blank" class="btn" onclick="submitPostTopic()">This.</a>
+                                            <div class="accent-bar"></div>
+                                        </div>
+                                        <div class="post-body-container">
+                                            <span>What would you like to tell the world?</span>
+                                            <textarea id="post-content"></textarea>
+                                            <a target="_blank" class="btn" onclick="submitPost()">Set my words free.</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content-blocks contact">
+                <section class="content">
+                    <div class="block-content">
+                        <h3 class="block-title">Get in touch</h3>
+                        <div class="row">
+                            <div class="col-md-5 offset-md-1">
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-email-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Shoot me an Email.</h5>
+                                        <p>dcrossetter@oakland.edu</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-telephone-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Give me a call.</h5>
+                                        <p><a href="tel:+4402920111222">517-375-3735</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-location-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>And I guess if that fails, this is where I live.</h5>
+                                        <p>201 North Squirrel Rd | Auburn Hills, Michigan</p>
+                                        <p>With Pat and Nic, my room mates, and dearest bros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content-blocks pop">
+                <div id="close-pop" class="close-pop">
+                    Close <i class="ion-ios-close-empty"></i>
+                </div>
+                <section class="content"></section>
+            </div>
+        </div>
+    </section>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="js/addBlogPost.js"></script>
+
+</body>
+
+</html>
